@@ -1,0 +1,810 @@
+@font-face {
+  font-family: "DINNextLTPro-HeavyCondensed";
+  src: url(../fuente/DINNextLTPro-HeavyCondensed.ttf);
+}
+
+@font-face {
+  font-family: "DINNextLTPro-Medium";
+  src: url(../fuente/DINNextLTPro-Medium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DINNextLTPro-HeavyCondensed";
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+/*---------------------INDEX PAGE-----------------------------*/
+.indexMain, .indexSecundarias {
+  width: 1000px;
+  margin: auto;
+  background-size: cover;
+  margin-top: 1%;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,64,0,1);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(0,64,0,1);
+  box-shadow: 0px 0px 25px 0px rgba(0,64,0,1);
+}
+
+.indexMain {
+  background-color: #000;
+}
+
+.indexSecundarias {
+  background-color: #f1f2f6;
+}
+
+.indexHeader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+.logo {
+  width: 7%;
+  height: 70%;
+}
+
+.imgLogo {
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-right: 15px;
+}
+
+li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  font-size: 20px;
+  color: #004000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #efefef;
+  transition: .8s;
+}
+
+/*---------------------SECTION-----------------------------*/
+
+.indexSection, .sectionPersonajes, .sectionFormulario, .sectionTomas {
+  min-height: 650px;
+}
+
+.section-index {
+  background-color: #efefef;
+  background-image: url(../img/fondo-index.png);
+  background-position: center;
+  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.section-concurso {
+  background-color: #efefef;
+  background-image: url(../img/imag.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-personajes {
+  background-color: #004000;
+}
+
+.section-escenas {
+  background-color: #000;
+}
+
+.titulo-internas {
+  height: 60px;
+  color: #fff;
+  font-size: 25px;
+  margin-left: 15px;
+  padding-top: 1%
+}
+
+/*---------------------FOOTER-----------------------------*/
+
+.indexFooter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0D0D0D
+}
+
+.indexFooter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0)
+}
+
+.logo-disney {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+
+a.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #004000;
+}
+
+.marvel-uces {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-right: 15px;
+}
+
+.logo-marvel {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-uces {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+/*---------------------INDEX-----------------------------*/
+
+.increible {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.hulk {
+  font-size: 200px;
+  color: #004000;
+  margin-left: 15px;
+  -webkit-text-stroke: 2px #000;
+}
+
+/*---------------------PERSONAJES-----------------------------*/
+
+.sectionPersonajes {
+  width: 100%;
+}
+
+/* cuando hagamos el mobile, el height de sectionPersonajes va en "Auto" y el containerPersonajes tiene flex-direction: column y tambien bajarle el width*/
+
+.tituloPersonajes {
+  height: 60px;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 1.5%;
+  padding-top: 1.5%;
+}
+
+.containerPersonajes {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.columnaPersonajes {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  justify-content: center;
+}
+
+.imagenPersonaje {
+  border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  width: 150px;
+  margin: 0 auto 5px;
+}
+
+.bordes {
+  border: 3px solid #000;
+}
+
+.nombre-personaje {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nombre-actor::selection {
+  color: #f4f3f4;
+  background-color: #004000;
+}
+
+.nombre-actor {
+  font-size: 14px;
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nombre-personaje::selection {
+  color: #f4f3f4;
+  background-color: #004000;
+}
+
+/*---------------------GALERIA DE IMAGENES-----------------------------*/
+
+.sectionTomas {
+  width: 97%;
+  height: 78%;
+  align-items: center;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  justify-content: center;
+}
+
+.contenedorColumnas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.contenedor-imagenes {
+  width: 100%;
+  height: 80%;
+}
+
+.imagen {
+  width: 24%;
+  border-radius: 10px;
+  border: 3px solid #282828;
+}
+
+.imagen:hover {
+  border: 3px solid #004000;
+}
+
+.tituloTomas {
+  padding-left: 0.5%;
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  height: 5%;
+}
+
+/*---------------------FORMULARIO-----------------------------*/
+
+.sectionFormulario {
+  width: 97%;
+  height: 78%;
+  align-items: center;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 45%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid #004000;
+}
+
+.titulos {
+  color: #004000;
+  font-size: 15px;
+  margin-bottom: 1%;
+}
+
+.pregunta {
+  color: #004000;
+  font-size: 15px;
+  margin-bottom: 1%;
+  margin-top: 10px;
+}
+
+.cajas {
+  width: 100%;
+  height: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid #004000;
+  outline: none;
+}
+
+.personaje {
+  color: #004000;
+  font-size: 13px;
+}
+
+.comentario {
+  font-size: 15px;
+  color: #fff;
+  border: 2px solid #004000;
+  background-color: transparent;
+  outline: none;
+}
+
+.boton1 {
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  height: 35px;
+  margin-top: 2%;
+  border-radius: 4px;
+  color: #004000;
+  border: 2px solid #004000;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.boton1:hover {
+  color: #000;
+  background-color: #004000;
+}
+
+/*---------------------MICROSITIO-----------------------------*/
+
+/*---------------------INDEX-----------------------------*/
+
+.index-micrositio {
+  background: #004000;
+  min-height: 650px;
+  background-image: url(../img/prueba.png);
+  background-position: left;
+  background-size: cover;
+}
+
+.titulo-index-micrositio {
+  color: #004000;
+  font-size: 50px;
+  margin-left: 15px;
+}
+
+.guia-final {
+  width: 60%;
+  height: 400px;
+  margin-left: 15px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+  border-radius: 10px;
+}
+
+/*---------------------NAVEGACION-----------------------------*/
+
+.index-navegacion {
+  background: #004000;
+  min-height: 650px;
+}
+
+.video {
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+/*---------------------RELEVAMIENTO-----------------------------*/
+
+.index-relevamiento {
+  background: #004000;
+  height: 650px;
+}
+
+.relevamiento {
+  width: 97%;
+  height: 90%;  
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+/*---------------------PANTALLAS-----------------------------*/
+
+.index-pantallas {
+  background: #004000;
+  height: 650px;
+}
+
+/*---------------------DECISIONES-----------------------------*/
+
+.index-decisiones {
+  background: #004000;
+  height: 650px;
+}
+
+.bajada-titulo {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.din-next-heavy-condensed {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.abecedario {
+  color: #000;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.din-next-medium {
+  font-family: "DINNextLTPro-Medium";
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.abecedario2 {
+  font-family: "DINNextLTPro-Medium";
+  color: #000;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.descripcion-tipografia {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+#article1{
+	width: 450px;
+	height: 500px;
+	float: left;
+  margin-left: 30px;
+}
+
+#article2{
+	width: 450px;
+	height: 500px;
+	float: right;
+  margin-right: 30px;
+}
+
+.descripcion {
+  color: #000;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.circulo, .circulo2, .circulo3 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+}
+
+.circulo {
+  background-color: #004000;
+  border: 2px solid #000000;
+  margin-left: 15px;
+}
+
+.circulo2 {
+  background-color: #000000;
+  margin-left: 15px;
+}
+
+.circulo3 {
+  background-color: #ffffff;
+  margin-left: 15px;
+}
+
+
+.color1 {
+  display: flex;
+  text-align: center;
+  line-height: 90px;
+}
+
+.hexa {
+  font-size: 22px;
+  margin-left: 120px;
+}
+
+
+/*---------------------MEDIA-----------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .indexMain, .indexSecundarias {
+    width: 100%;
+  }
+
+  .sectionPersonajes {
+    height: auto;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    font-size: 30px;
+  }
+
+
+  ul > li > a {
+    font-size: 505px;
+  }
+
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  /*----------------TOMAS.HTML-----------------------*/
+
+  .tituloTomas {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+  }
+
+  .contenedorColumnas {
+    flex-direction: column;
+  }
+
+  .contenedorImagenes {
+    width: 100%;
+  }
+
+  .imagen {
+    width: 95%;
+    border-radius: 1rem;
+  }
+
+
+  /*----------------PERSONAJES.HTML-----------------------*/
+
+
+  .containerPersonajes {
+    height: auto;
+  }
+
+  .columnaPersonajes {
+    flex: 0 1 100%;
+  }
+
+  .tituloPersonajes {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .imagenPersonaje,
+  .nombrePersonaje {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .nombre-personaje {
+    padding: 5px;
+  }
+
+  /*----------------CUESTIONARIO.HTML-----------------------*/
+  .sectionFormulario > .tituloPersonajes {
+    font-size: 20px;
+  }
+
+  .titulos {
+    font-size: 12px;
+  }
+
+  .form{
+    width: 70%;
+  }
+
+  .boton1,
+  .boton2 {
+    width: 48%;
+  }
+
+  /*----------------FOOTER-----------------------*/
+
+  a.copyright {
+    font-size: 16px;
+  }
+ 
+
+  .logoDisney {
+    width: 15%;
+  }
+  
+  .logoPeliculas {
+    width: 15%;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .indexMain, .indexSecundarias {
+    width: 100%;
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    font-size: 25px;
+  }
+
+  a.copyright {
+    font-size: 14px;
+  } 
+  
+  .sectionPersonajes {
+    height: auto;
+  }
+
+  .containerPersonajes {
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .logoContainer {
+    width: 55%;
+  }
+
+  .tituloPersonajes {
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+
+  .columnaPersonajes {
+      flex: 0 1 25%;
+      padding: 2%;
+  }
+
+  .imagen {
+    width: 23.7%;
+    border-radius: 1rem;
+  }
+
+  .sectionFormulario > h2 {
+    font-size: 30px;
+    padding: 2%;
+  }
+
+  .form > label {
+    font-size: 12px;
+  }
+
+
+  .form{
+    width: 60%;
+  }
+
+  .boton1,
+  .boton2 {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  ul > li > a {
+    font-size: 25px;
+  }
+
+
+  .tituloPersonajes {
+    margin-left: 4%;
+  }
+
+  .columnaPersonajes {
+      flex: 0 1 20%;
+      padding: 2%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+
+
+  .indexHeader {
+    height: 100px;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .sectionFormulario > .tituloPersonajes {
+      font-size: 35px;
+    }
+  
+    .titulos {
+      font-size: 15px;
+    }
+
+    .menu {
+      font-size: 25px;
+    }
+
+    .sinopsis2 {
+      font-size: 15px;
+      width: 90%;
+      margin: auto;
+    }
+
+  .columnaPersonajes {
+      flex: 0 1 20%;
+  }  
+  .creadoraPagina {
+    font-size: 14px;
+  }
+}
